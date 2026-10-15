@@ -1,0 +1,35 @@
+{
+  "name": "dsh-pet-guardian-dragon",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "author": "lucas07814",
+  "description": "DSH Web UI 桌宠：形态 A「少女主体 + 守护龙影」。右下角悬浮（可拖拽）与标题栏常驻双模式，含待机/拖拽/点击/投喂/成长五个动作。",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib",
+    "cordis.patch.yml",
+    "README.md"
+  ],
+  "dsh": {
+    "client": {
+      "platform": "web",
+      "inject": []
+    }
+  },
+  "peerDependencies": {
+    "@deepseek-ai/cordis": "*",
+    "react": "^18.2.0"
+  },
+  "scripts": {
+    "build:art": "python art/build-art.py",
+    "build:client": "python art/build-client.py",
+    "check": "node --check lib/index.js && node --check lib/client.js"
+  },
+  "license": "MIT"
+}

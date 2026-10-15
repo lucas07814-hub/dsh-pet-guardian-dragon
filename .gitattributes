@@ -1,0 +1,30 @@
+# 行尾与文件类型规范化
+# 说明：只对本项目实际存在的文本类型显式指定 LF，避免在 Windows 上检出成 CRLF 后
+#       产生「整文件被改写」的假 diff；二进制素材禁止任何转换。
+
+* text=auto
+
+# 文本源码 —— 统一 LF
+*.py    text eol=lf
+*.js    text eol=lf
+*.cjs   text eol=lf
+*.json  text eol=lf
+*.md    text eol=lf
+*.yml   text eol=lf
+*.yaml  text eol=lf
+.gitignore    text eol=lf
+.gitattributes text eol=lf
+
+# 二进制素材与产物 —— 不做行尾/编码转换
+*.png   binary
+*.jpg   binary
+*.jpeg  binary
+*.webp  binary
+*.gif   binary
+*.ico   binary
+*.asar  binary
+*.pyc   binary
+
+# 生成物标注：lib/client.js 由 art/build-client.py 生成，diff 时归为生成文件
+lib/client.js  linguist-generated=true
+art/art-data.json  linguist-generated=true

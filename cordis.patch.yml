@@ -1,0 +1,5 @@
+# dsh-pet-guardian-dragon 的 profile 层：一条 insert 行即把桌宠挂上 DSH Web。
+# 宿主 Loader 扫描本包的 dsh.client 声明，并把 exports["./client"] 送进浏览器。
+- insert:
+    - id: dsh-pet-guardian-dragon
+      name: 'dsh-pet-guardian-dragon'

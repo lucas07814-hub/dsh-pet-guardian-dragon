@@ -1,0 +1,34 @@
+MIT License
+
+Copyright (c) 2026 lucas07814
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+---
+
+注意 / NOTE:
+本 MIT 许可**只覆盖本项目的代码**（`lib/index.js`、`src/client.template.js`、
+`art/*.py`、`art/*.cjs`、配置文件与文档）。
+
+**美术素材不在 MIT 许可范围内**，包括 `art/src/*.png`、`art/art-data.json`，
+以及 `lib/client.js` 中内联的同一批立绘数据。美术素材的许可条款见
+[ART-LICENSE.md](ART-LICENSE.md)（仅限非商业使用与再分发）。
+
+This MIT license covers the source code only. The artwork is licensed
+separately under ART-LICENSE.md (non-commercial use and redistribution only).

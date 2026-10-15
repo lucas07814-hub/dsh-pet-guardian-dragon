@@ -1,0 +1,96 @@
+# ============================================================
+# dsh-pet-guardian-dragon / .gitignore
+# 原则：只忽略「凭据 / 环境变量 / 缓存 / 本地可重生成产物」；
+#       运行必需文件与素材（art/art-data.json、art/src/*.png）一律保留，
+#       见文件末尾的显式白名单。
+# ============================================================
+
+# --- Python 字节码与缓存 ---
+# 注意：曾经这里残留过已删除的 inspect.pyc，属于隐患
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.cache/
+
+# --- 依赖与构建产物（本项目 lib/ 是运行必需文件，刻意不忽略） ---
+node_modules/
+dist/
+build/
+*.log
+logs/
+
+# --- 生图原始产物与预览（体积大，可用 art/gen.py 重出） ---
+art/out/
+
+# --- 环境变量文件（可能含密钥，绝不入库） ---
+.env
+.env.*
+*.env
+!.env.example
+!.env.sample
+!.env.template
+
+# --- 凭据与密钥（含各类备份 / 副本形式） ---
+# 凭据绝不入库
+.nvidia-key
+# .nvidia-key 的一切备份/副本（.bak / -2026 / -backup / _old 等）一律忽略
+.nvidia-key*
+*api*key*
+.nvidia-key.*
+*.nvidia-key
+*.key
+*.key.*
+*.pem
+*.p12
+*.pfx
+id_rsa*
+id_ed25519*
+id_ecdsa*
+*.keystore
+*.jks
+*credential*
+*secret*
+
+# --- 其他凭据 / 令牌文件（只列具体文件名，不用 *.json / *.txt 这类宽泛通配） ---
+.npmrc
+.netrc
+key.json
+token.txt
+config.local
+# 无前导点的密钥名与其副本：nvidia-key / nvidia-key-2026 / nvidia-key_backup / nvidia-key.bak
+nvidia-key
+nvidia-key[-_.]*
+
+# --- 密钥与配置的备份文件（防 .bak/.old/带时间戳副本漏网） ---
+*.bak
+*.bak-*
+*.bak.*
+*.old
+*.orig
+*.save
+*.tmp
+*.temp
+*~
+
+# --- 编辑器与操作系统杂项 ---
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+
+# ============================================================
+# 显式白名单（必须置于文件末尾）：运行必需文件与素材
+# ============================================================
+!art/art-data.json
+!art/src/*.png
+!lib/index.js
+!lib/client.js
+!src/client.template.js
+!cordis.patch.yml
+!package.json
+!README.md
