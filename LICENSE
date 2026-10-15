@@ -28,7 +28,8 @@ SOFTWARE.
 
 **美术素材不在 MIT 许可范围内**，包括 `art/src/*.png`、`art/art-data.json`，
 以及 `lib/client.js` 中内联的同一批立绘数据。美术素材的许可条款见
-[ART-LICENSE.md](ART-LICENSE.md)（仅限非商业使用与再分发）。
+[ART-LICENSE.md](ART-LICENSE.md)（非商业；**再分发尚未授予**，授权链待核实）。
 
-This MIT license covers the source code only. The artwork is licensed
-separately under ART-LICENSE.md (non-commercial use and redistribution only).
+This MIT license covers the source code only. The artwork is licensed separately
+under ART-LICENSE.md (non-commercial; redistribution is not granted pending
+verification of the upstream authorization chain).
