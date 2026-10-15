@@ -20,6 +20,9 @@
     "client": {
       "platform": "web",
       "inject": []
+    },
+    "bundle": {
+      "patch": "./cordis.patch.yml"
     }
   },
   "peerDependencies": {
